@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ade395f9-c486-434b-bd3f-65d1770519a9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Flask_Blog.py</StartupFile>
+    <StartupFile>run.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,8 +22,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Flask_Blog.py" />
-    <Compile Include="forms.py" />
+    <Compile Include="run.py" />
+    <Compile Include="Flask_Blog\routes.py" />
+    <Compile Include="Flask_Blog\__init__.py" />
+    <Compile Include="Flask_Blog\forms.py" />
+    <Compile Include="Flask_Blog\models.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
@@ -37,17 +40,17 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="static\main.css" />
-    <Content Include="template" />
-    <Content Include="templates\about.html" />
-    <Content Include="templates\home.html" />
-    <Content Include="templates\layout.html" />
-    <Content Include="templates\login.html" />
-    <Content Include="templates\register.html" />
+    <Content Include="Flask_Blog\static\main.css" />
+    <Content Include="Flask_Blog\templates\about.html" />
+    <Content Include="Flask_Blog\templates\home.html" />
+    <Content Include="Flask_Blog\templates\layout.html" />
+    <Content Include="Flask_Blog\templates\login.html" />
+    <Content Include="Flask_Blog\templates\register.html" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="static\" />
-    <Folder Include="templates\" />
+    <Folder Include="Flask_Blog\" />
+    <Folder Include="Flask_Blog\static\" />
+    <Folder Include="Flask_Blog\templates\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
